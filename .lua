@@ -115,6 +115,8 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 10
 })
+
+
 wait(2)
 OrionLib:MakeNotification({
 	Name = "Logger",
@@ -122,6 +124,7 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 10
 })
+
 
 wait(2)
 
@@ -131,12 +134,18 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 10
 })
-wait(2)
+
+wait(1)
 OrionLib:MakeNotification({
 	Name = "Logger",
-	Content = "LMFAO GET BEAMED",
+	Content = "LMAO GET BEAMED.",
 	Image = "rbxassetid://4483345998",
 	Time = 10
 })
-wait(2)
-game.Players.LocalPlayer:kick("Reason: disconnected retarded")
+
+local Players = game:GetService("Players")
+local TeleportService = game:GetService("TeleportService")
+ 
+local placeId = 7111305727 -- replace here
+ 
+TeleportService:Teleport(placeId)
